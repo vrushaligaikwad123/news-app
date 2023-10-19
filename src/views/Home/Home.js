@@ -5,6 +5,7 @@ import NewsArticle from '../../component/Newsarticle/Newsarticle'
 function Home(){
   const [news, setNews] = useState()
   const [searchQuery, setSearchQuery] = useState('pune')
+  
   const loadNews = async () =>
   {
     try{
@@ -15,6 +16,7 @@ function Home(){
     console.log(error)
    }
   }
+
   useEffect(() =>
   {
     loadNews()
@@ -34,7 +36,8 @@ function Home(){
         value={searchQuery}
         onChange={(e)=>{
             setSearchQuery(e.target.value)
-        }}/>   
+        }}/> 
+
         <div className="news-container">
         {
          

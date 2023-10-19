@@ -1,8 +1,8 @@
 import React from "react";
 import "./Newsarticle.css";
-function Newsarticle(author,title,description,url,urlToImage,publishedAt){
+function Newsarticle(author,title,description,url,urlToImage,publishedAt, index){
     return(
-        <div className="news-article-card">
+        <div className="news-article-card" key={index}>
                  <img src={urlToImage} className="news-article-img"/>
                  <h1 className="article-title"> {title} </h1>
                  <div className="article-info">
