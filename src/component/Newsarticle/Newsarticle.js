@@ -1,17 +1,22 @@
-import React from "react";
-import "./Newsarticle.css";
-function Newsarticle(author,title,description,url,urlToImage,publishedAt, index){
-    return(
-        <div className="news-article-card" key={index}>
-                 <img src={urlToImage} className="news-article-img"/>
-                 <h1 className="article-title"> {title} </h1>
-                 <div className="article-info">
-                    <p className="article-author">{author}</p>
-                    <p className="article-published">{publishedAt}</p>
-                 </div>
-                 <p className="article-description">{description}</p>
-                 <a href={url} target="blank" className="btn-read-more">Read More</a>
-         </div>
-    )
+import React from 'react';
+import './Newsarticle.css';
+
+function NewsArticle({author, title , description, url, urlToImage, publishedAt}) {
+  return (
+    <>
+    <div className='news-article-card'>
+              <img src={urlToImage}    alt='' className='news-articles-img'/>
+              <h1 className='article-title'>{title}</h1>
+              <div className='article-info'>
+                <span className='article-author'>{author}</span>
+                <span className='article-publishedAt'>{publishedAt}</span>
+              </div>
+              <p className='article-description'>{description}</p>
+
+              <a href={url} target='_blank' className='btn-readmore btn btn-primary'>Read More</a>
+            </div>
+    </>
+  )
 }
-export default Newsarticle
+
+export default NewsArticle
