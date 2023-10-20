@@ -3,17 +3,16 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .search-input{
-    display: block;
-    margin: 20px auto;
-    width: 300px;
-    font-size: 25px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid black;
-    padding:5px;
-    text-align:center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-shadow: 1px 1px 1px 1px rgb(161, 161, 161);
+    width: 100%;
+    padding: 10px;
     border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
 }

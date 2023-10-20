@@ -29,12 +29,13 @@ function Home() {
   return (
     <>
       <nav class="navbar navbar-dark bg-dark text-light">
-        <h3 class="navbar-brand ms-3">News App🗞️</h3>
+        <h3 class="navbar-brand ms-3" className="heading">News App🗞️</h3>
         <form class="form-inline">
           <input
             class="form-control mr-sm-2 me-5"
             type="search"
             placeholder="Search"
+            className="search-input"
             value={searchQuery}
             onChange={(e) => {
               setSearchQuery(e.target.value);
